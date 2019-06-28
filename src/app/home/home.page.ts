@@ -15,7 +15,7 @@ import {
   GeocoderRequest
 } from '@ionic-native/google-maps';
 
-// import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
+
 
 
 @Component({
@@ -32,22 +32,11 @@ export class HomePage {
   zoom: number = 10;
 
   constructor(
-    private platform: Platform
-    // private androidPermissions: AndroidPermissions
+    private platform: Platform,
+    
 
-  ) {}
-  
-  // this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA).then
-  // (
-  //   result => console.log('Has permission?',result.hasPermission),
-  //   err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA)
-  // );
- 
-  // this.androidPermissions.requestPermissions([
-  //   this.androidPermissions.PERMISSION.CAMERA, this.androidPermissions.PERMISSION.GET_ACCOUNTS
-  // ]);
-  
-  
+  ) {
+  }
 
   async ngOnInit() {
     // Since ngOnInit() is executed before `deviceready` event,

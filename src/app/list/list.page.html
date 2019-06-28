@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Eventos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-toolbar>
+  <ion-searchbar color="danger" placeholder="Pesquisar" cancelButtonText="Custom Cancel" animated></ion-searchbar>
+</ion-toolbar>
+
+<ion-content class="background">
+
+  <!-- Filtros -->
+  <ion-list>
+    <ion-item>
+      <ion-label>Filtros</ion-label>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="pop" selected>Mais Populares</ion-select-option>
+        <ion-select-option value="cat">Categoria</ion-select-option>
+        <ion-select-option value="loc">Local</ion-select-option>
+        <ion-select-option value="dist">Distância</ion-select-option>
+        <ion-select-option value="data">Data</ion-select-option>
+        <ion-select-option value="maio-prec">↑ Preço</ion-select-option>
+        <ion-select-option value="meno-prec">↓ Preço</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <!-- Eventos -->
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/gaiola.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Top #1 Mais Vendido!</ion-card-subtitle>
+      <ion-card-title>Baile da Gaiola</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        <strong>Endereço:</strong> R. Aimoré - Penha, Rio de Janeiro - RJ, 21070-230
+        <br>
+        <strong>Telefone:</strong> (21) 96448-4098</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/viadutmadu.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Promoção Exclusiva!</ion-card-subtitle>
+      <ion-card-title>Baile do Viaduto de Madureira</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        <strong>Endereço:</strong> R. Carvalho de Souza, 211 - Madureira, Rio de Janeiro - RJ, 21350-180
+        <br>
+        <strong>Telefone:</strong> (21) 96475-2020</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Configurações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content align="center"
+[scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+<ion-card>
+    <ion-card-header align="center">
+      <ion-card-subtitle>Capitulo 1</ion-card-subtitle>
+        <ion-card-title>Passado Vivo</ion-card-title>
+    </ion-card-header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkSfNxWew1Ng4vHl52h5Jh-8uvX60uHCcoDaa1BDoQ7FuJKsrN">
+    <ion-card-content>
+        Sinopse: O que seria da morte sem a vida?
+    </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-item>
+    <ion-icon></ion-icon>
+    <ion-card-subtitle>Você prefere o que?</ion-card-subtitle>
+  </ion-item>
+
+  <ion-list>
+      <ion-item>
+        <ion-label>A verdade dolorida</ion-label>
+        <ion-toggle color="danger" [(ngModel)]="pepperoni"></ion-toggle>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>A mentira feliz</ion-label>
+        <ion-toggle color="danger" [(ngModel)]="mushrooms"></ion-toggle>
+      </ion-item>
+    </ion-list>
+</ion-card>
+
+<ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+  <ion-infinite-scroll-content
+    loadingSpinner="bubbles"
+    loadingText="Loading more data...">
+  </ion-infinite-scroll-content>
+</ion-infinite-scroll>
+
+    <ion-button color="medium" size="small">Termos de uso</ion-button>
+      <br>
+    <ion-button color="medium" size="small">Sobre</ion-button>
+</ion-content>
+
+

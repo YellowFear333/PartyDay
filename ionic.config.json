@@ -1,0 +1,8 @@
+{
+  "name": "PartyDay",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!--<a class="sourcecode"
+    href="https://github.com/mapsplugin/ionic-googlemaps-quickdemo-v4"
+    target="_blank">Documentação</a>-->
+
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Endereco" [(ngModel)]="endereco"></ion-input>
+      <ion-button (click)="localEndereco($event)">
+        Buscar
+      </ion-button>
+    <ion-button (click)="localAtual()">
+      Marcar local
+    </ion-button>
+  </ion-item>
+
+  <div class="map" id="map_canvas">
+  </div>
+
+</ion-content>
